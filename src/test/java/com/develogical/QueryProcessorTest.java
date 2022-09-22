@@ -40,4 +40,9 @@ public class QueryProcessorTest {
         assertThat(queryProcessor.process("what is 207 plus 2010"), containsString("2217"));
     }
 
+    @Test
+    public void isCubeSquare507Vs64() throws Exception {
+        assertThat(queryProcessor.process("which of the following numbers is both a square and a cube: 507, 64"), containsString("64"));
+    }
+
 }

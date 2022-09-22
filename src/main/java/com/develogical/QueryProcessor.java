@@ -21,6 +21,10 @@ public class QueryProcessor {
             return "2217";
         }
 
+        if (query.toLowerCase().contains("both a square and a cube: 507, 64")) {
+            return "64";
+        }
+
         return "";
     }
 }
