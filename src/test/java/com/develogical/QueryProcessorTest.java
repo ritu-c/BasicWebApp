@@ -35,4 +35,9 @@ public class QueryProcessorTest {
         assertThat(queryProcessor.process("what is 2014 plus 2010"), containsString("4024"));
     }
 
+    @Test
+    public void ifSum207Plus2010() throws Exception {
+        assertThat(queryProcessor.process("what is 207 plus 2010"), containsString("2217"));
+    }
+
 }
