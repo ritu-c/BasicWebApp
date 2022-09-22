@@ -30,4 +30,9 @@ public class QueryProcessorTest {
         assertThat(queryProcessor.process("what is your name"), containsString("Example"));
     }
 
+    @Test
+    public void ifSumYears() throws Exception {
+        assertThat(queryProcessor.process("what is 2014 plus 2010"), containsString("4024"));
+    }
+
 }

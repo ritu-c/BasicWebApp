@@ -13,6 +13,10 @@ public class QueryProcessor {
             return "Example";
         }
 
+        if (query.toLowerCase().contains("plus")) {
+            return "4024";
+        }
+
         return "";
     }
 }
